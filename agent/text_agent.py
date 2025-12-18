@@ -3,7 +3,10 @@ from agent.hypothesis_agent import hypothesis_agent
 FEATURE_MAP = {
     "mileage": "AVG_ANNUAL_MILEAGE",
     "annual mileage": "AVG_ANNUAL_MILEAGE",
-    "telematics": "TELEMATICS_SCORE"
+    # Telematics-like score present in the provided dataset
+    "telematics": "RETRO_10SEC_GPS_SCORE_V1_SCORE",
+    "gps score": "RETRO_10SEC_GPS_SCORE_V1_SCORE",
+    "retro": "RETRO_10SEC_GPS_SCORE_V1_SCORE",
 }
 
 def run_from_text(df, text):
